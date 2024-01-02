@@ -34,7 +34,7 @@ fun main() {
 }
 
 private fun onCreate(packet: DatagramPacket) {
-    lobbies.addLast(packet.address to packet.port)
+    lobbies.add(packet.address to packet.port)
 }
 
 private fun onList(socket: DatagramSocket, packet: DatagramPacket) {
